@@ -1,0 +1,51 @@
+.legalPage {
+  padding: 4rem 24px 8rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.04em;
+}
+
+.lastUpdated {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.content p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content li {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.content strong {
+  color: var(--foreground);
+  font-weight: 600;
+}

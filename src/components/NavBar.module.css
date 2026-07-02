@@ -1,0 +1,46 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(244, 242, 236, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 0.5px solid var(--card-border);
+  padding: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background: rgba(21, 20, 15, 0.85);
+  }
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.link:hover {
+  color: var(--foreground);
+}
