@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tangent",
-  description: "All features, one page. The workspace for your notes.",
+  title: "Tangent — Turn your tangents into action",
+  description: "Talk for 60 seconds. Get a clean checklist. Tangent listens to the ramble and hands back the summary and the to-dos.",
 };
 
 export default function RootLayout({
@@ -27,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <NavBar />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

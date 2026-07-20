@@ -1,0 +1,32 @@
+<svg viewBox="0 0 402 874" xmlns="http://www.w3.org/2000/svg">
+  <rect width="402" height="874" fill="#0f0f0d"/>
+  <text x="201" y="70" text-anchor="middle" fill="#f4f2ec" font-family="system-ui" font-size="18" font-weight="700">Morning standup ideas</text>
+  <text x="201" y="95" text-anchor="middle" fill="#6d6b62" font-family="system-ui" font-size="12">2 min · Today</text>
+  <!-- Checklist card -->
+  <rect x="24" y="140" width="354" height="200" rx="16" fill="#1a1a17" stroke="rgba(255,252,240,0.07)" stroke-width="0.5"/>
+  <text x="44" y="170" fill="#6d6b62" font-family="monospace" font-size="11" letter-spacing="0.5">YOUR CHECKLIST</text>
+  <text x="44" y="198" fill="#f4f2ec" font-family="system-ui" font-size="20" font-weight="700">3 things you said you'd do.</text>
+  <!-- Progress bar -->
+  <rect x="44" y="220" width="314" height="6" rx="3" fill="rgba(255,252,240,0.1)"/>
+  <rect x="44" y="220" width="105" height="6" rx="3" fill="#f4f2ec"/>
+  <!-- Tasks -->
+  <g transform="translate(24,260)">
+    <circle cx="30" cy="12" r="10" fill="#f4f2ec"/>
+    <text x="30" y="16" text-anchor="middle" fill="#0f0f0d" font-family="system-ui" font-size="11" font-weight="700">✓</text>
+    <text x="50" y="16" fill="#a3a097" font-family="system-ui" font-size="14" text-decoration="line-through">Send Maya the timeline</text>
+  </g>
+  <g transform="translate(24,300)">
+    <circle cx="30" cy="12" r="10" fill="none" stroke="#6d6b62" stroke-width="1.5"/>
+    <text x="50" y="16" fill="#f4f2ec" font-family="system-ui" font-size="14">Draft the pitch deck intro</text>
+  </g>
+  <g transform="translate(24,340)">
+    <circle cx="30" cy="12" r="10" fill="none" stroke="#6d6b62" stroke-width="1.5"/>
+    <text x="50" y="16" fill="#f4f2ec" font-family="system-ui" font-size="14">Book meeting room for Friday</text>
+  </g>
+  <!-- Tabs -->
+  <rect x="24" y="410" width="354" height="40" rx="10" fill="#1a1a17"/>
+  <rect x="28" y="414" width="116" height="32" rx="8" fill="#2a2a27"/>
+  <text x="86" y="434" text-anchor="middle" fill="#f4f2ec" font-family="system-ui" font-size="13" font-weight="600">Tasks</text>
+  <text x="201" y="434" text-anchor="middle" fill="#6d6b62" font-family="system-ui" font-size="13">Summary</text>
+  <text x="318" y="434" text-anchor="middle" fill="#6d6b62" font-family="system-ui" font-size="13">Transcript</text>
+</svg>
