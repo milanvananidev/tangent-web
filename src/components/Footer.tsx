@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { TangentMark } from './TangentMark';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -7,11 +8,15 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.footerContainer}`}>
         <div className={styles.col}>
-          <div className={styles.logo}>Tangent</div>
-          <p className={styles.desc}>The all-in-one workspace for your ideas, notes, and tasks.</p>
+          <div className={styles.logo}>
+            <TangentMark size={22} stroke={11} />
+            Tangent
+          </div>
+          <p className={styles.desc}>Talk it out. Tangent turns your voice notes into transcripts, summaries, and action items.</p>
         </div>
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>Legal</h4>
+          <h4 className={styles.colTitle}>Help</h4>
+          <Link href="/support" className={styles.link}>Support</Link>
           <Link href="/privacy" className={styles.link}>Privacy Policy</Link>
           <Link href="/terms" className={styles.link}>Terms of Service</Link>
         </div>

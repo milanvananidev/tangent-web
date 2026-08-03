@@ -1,51 +1,89 @@
 .legalPage {
-  padding: 4rem 24px 8rem;
-  max-width: 800px;
+  padding: 3.5rem 24px 7rem;
+  max-width: 760px;
   margin: 0 auto;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .lastUpdated {
   color: var(--muted);
-  font-size: 0.95rem;
-  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--card-border);
 }
 
+.lead {
+  color: var(--foreground);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
 .content h2 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  margin: 2.5rem 0 1rem;
+  margin: 2.75rem 0 1rem;
   letter-spacing: -0.02em;
 }
 
 .content p {
   color: var(--muted);
-  line-height: 1.8;
-  margin-bottom: 1.25rem;
-  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.1rem;
+  font-size: 1.02rem;
 }
 
 .content ul {
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem;
+  list-style: none;
 }
 
 .content li {
+  position: relative;
   color: var(--muted);
-  line-height: 1.8;
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.65rem;
+  font-size: 1.02rem;
+  padding-left: 1.1rem;
+}
+
+.content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--muted-light, var(--muted));
 }
 
 .content strong {
   color: var(--foreground);
   font-weight: 600;
+}
+
+.content a,
+.lead a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.1rem;
+  }
+  .legalPage {
+    padding: 2.5rem 20px 5rem;
+  }
 }

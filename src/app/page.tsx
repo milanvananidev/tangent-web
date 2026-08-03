@@ -4,7 +4,7 @@ import { AppleIcon } from "@/components/AppleIcon";
 import { FeatureIcon } from "@/components/Icons";
 import { AnimatedWaveform } from "@/components/AnimatedWaveform";
 
-const NAV_LINKS = ["Features", "How it works", "Privacy"];
+export const NAV_LINKS = ["Features", "How it works", "Privacy"];
 
 const FEATURE_ROWS = [
   {
