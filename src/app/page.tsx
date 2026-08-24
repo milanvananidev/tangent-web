@@ -4,6 +4,7 @@ import { AppleIcon } from "@/components/AppleIcon";
 import { FeatureIcon } from "@/components/Icons";
 import { AnimatedWaveform } from "@/components/AnimatedWaveform";
 
+export const APP_STORE_URL = "https://apps.apple.com/in/app/tangent-ai-voice-note/id6796945435";
 export const NAV_LINKS = ["Features", "How it works", "Privacy"];
 
 const FEATURE_ROWS = [
@@ -55,7 +56,7 @@ export default function LandingPage() {
             <a key={x} href={`#${x.toLowerCase().replace(/ /g, "-")}`} className={styles.navLink}>{x}</a>
           ))}
         </div>
-        <a href="https://apps.apple.com" className={styles.navCta}>Get the app</a>
+        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={styles.navCta}>Get the app</a>
       </nav>
 
       {/* ── Hero ── */}
@@ -75,7 +76,7 @@ export default function LandingPage() {
             and hands back the summary and the to-dos &mdash; so the thought doesn&apos;t slip away.
           </p>
           <div className={`${styles.heroCtas} ${styles.fadeInUp}`} style={{ animationDelay: "0.5s" }}>
-            <a href="https://apps.apple.com" className={styles.ctaPrimary}>
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
               <AppleIcon /> Download for iPhone
             </a>
           </div>
@@ -141,7 +142,7 @@ export default function LandingPage() {
       {/* ── Final CTA ── */}
       <section className={styles.finalCta}>
         <h2 className={styles.finalCtaTitle}>Stop taking notes.<br />Start finishing things.</h2>
-        <a href="https://apps.apple.com" className={styles.ctaPrimary}>
+        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
           <AppleIcon /> Try Tangent free for 7 days
         </a>
       </section>
